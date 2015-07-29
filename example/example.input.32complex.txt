@@ -1,0 +1,32 @@
+#PDB	Chain	Ligand	Uniprot	GN	Protein	Species	Ligand	Ligand	Lig_ResNum	#CT_Res	EA
+4rpv	A	3UR	P11309	PIM1	Serine/threonine-protein kinase pim-1	Homo sapiens	3UR	401	16	8.581
+3dog	A	NNN	P24941	CDK2	Cyclin-dependent kinase 2	Homo sapiens	NNN	299	20	11.767
+3dog	B	SGM	P30274	CCNA2	Cyclin-A2	Bos taurus	SGM	1	5	7.348
+3dog	C	NNN	P24941	CDK2	Cyclin-dependent kinase 2	Homo sapiens	NNN	299	21	12.944
+3dog	D	SGM	P30274	CCNA2	Cyclin-A2	Bos taurus	SGM	1	6	7.757
+4r3c	A	GG5	Q16539	MAPK14	Mitogen-activated protein kinase 14	Homo sapiens	GG5	401	15	13.199
+4r3c	A	3GF	Q16539	MAPK14	Mitogen-activated protein kinase 14	Homo sapiens	3GF	402	19	9.842
+2vuw	A	5ID	Q8TF76	GSG2	Serine/threonine-protein kinase haspin	Homo sapiens	5ID	1800	17	10.286
+2vuw	A	MPD	Q8TF76	GSG2	Serine/threonine-protein kinase haspin	Homo sapiens	MPD	1803	1	0.707
+3cs9	A	NIL	P00519	ABL1	Tyrosine-protein kinase ABL1	Homo sapiens	NIL	600	26	15.212
+3cs9	B	NIL	P00519	ABL1	Tyrosine-protein kinase ABL1	Homo sapiens	NIL	600	25	14.892
+3cs9	C	NIL	P00519	ABL1	Tyrosine-protein kinase ABL1	Homo sapiens	NIL	600	27	16.013
+3cs9	D	NIL	P00519	ABL1	Tyrosine-protein kinase ABL1	Homo sapiens	NIL	600	27	14.251
+1m17	A	AQ4	P00533	EGFR	Epidermal growth factor receptor	Homo sapiens	AQ4	999	17	10.399
+2ity	A	IRE	P00533	EGFR	Epidermal growth factor receptor	Homo sapiens	IRE	2020	19	8.621
+2itx	A	ANP	P00533	EGFR	Epidermal growth factor receptor	Homo sapiens	ANP	2020	17	7.364
+2itw	A	ITQ	P00533	EGFR	Epidermal growth factor receptor	Homo sapiens	ITQ	2018	14	5.916
+3rcd	A	03P	P04626	ERBB2	Receptor tyrosine-protein kinase erbB-2	Homo sapiens	03P	9001	23	13.302
+3rcd	B	_NA	P04626	ERBB2	Receptor tyrosine-protein kinase erbB-2	Homo sapiens	_NA	_	_	_
+3rcd	C	03P	P04626	ERBB2	Receptor tyrosine-protein kinase erbB-2	Homo sapiens	03P	9001	21	12.004
+3rcd	D	_NA	P04626	ERBB2	Receptor tyrosine-protein kinase erbB-2	Homo sapiens	_NA	_	_	_
+3pp0	A	03Q	P04626	ERBB2	Receptor tyrosine-protein kinase erbB-2	Homo sapiens	03Q	1	27	15.778
+3pp0	B	03Q	P04626	ERBB2	Receptor tyrosine-protein kinase erbB-2	Homo sapiens	03Q	2	24	14.406
+4riw	A	ANP	P21860	ERBB3	Receptor tyrosine-protein kinase erbB-3	Homo sapiens	ANP	1101	18	10.597
+4riw	B	ADP	P00533	EGFR	Epidermal growth factor receptor	Homo sapiens	ADP	1001	16	9.430
+4riw	C	ANP	P21860	ERBB3	Receptor tyrosine-protein kinase erbB-3	Homo sapiens	ANP	1101	20	11.315
+4riw	D	ADP	P00533	EGFR	Epidermal growth factor receptor	Homo sapiens	ADP	1001	17	10.007
+3bbt	B	FMM	Q15303	ERBB4	Receptor tyrosine-protein kinase erbB-4	Homo sapiens	FMM	91	19	12.894
+3bbt	D	FMM	Q15303	ERBB4	Receptor tyrosine-protein kinase erbB-4	Homo sapiens	FMM	91	21	13.040
+2r4b	A	GW7	Q15303	ERBB4	Receptor tyrosine-protein kinase erbB-4	Homo sapiens	GW7	1	22	15.875
+2r4b	B	GW7	Q15303	ERBB4	Receptor tyrosine-protein kinase erbB-4	Homo sapiens	GW7	1	23	16.252

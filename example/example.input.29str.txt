@@ -1,0 +1,29 @@
+4rpv	A	P11309	PIM1_HUMAN	Homo sapiens	PIM1	Serine/threonine-protein kinase pim-1
+3dog	A	P24941	CDK2_HUMAN	Homo sapiens	CDK2	Cyclin-dependent kinase 2
+3dog	B	P30274	CCNA2_BOVIN	Bos taurus	CCNA2	Cyclin-A2
+3dog	C	P24941	CDK2_HUMAN	Homo sapiens	CDK2	Cyclin-dependent kinase 2
+3dog	D	P30274	CCNA2_BOVIN	Bos taurus	CCNA2	Cyclin-A2
+4r3c	A	Q16539	MK14_HUMAN	Homo sapiens	MAPK14	Mitogen-activated protein kinase 14
+2vuw	A	Q8TF76	HASP_HUMAN	Homo sapiens	GSG2	Serine/threonine-protein kinase haspin
+3cs9	A	P00519	ABL1_HUMAN	Homo sapiens	ABL1	Tyrosine-protein kinase ABL1
+3cs9	B	P00519	ABL1_HUMAN	Homo sapiens	ABL1	Tyrosine-protein kinase ABL1
+3cs9	C	P00519	ABL1_HUMAN	Homo sapiens	ABL1	Tyrosine-protein kinase ABL1
+3cs9	D	P00519	ABL1_HUMAN	Homo sapiens	ABL1	Tyrosine-protein kinase ABL1
+1m17	A	P00533	EGFR_HUMAN	Homo sapiens	EGFR	Epidermal growth factor receptor
+2ity	A	P00533	EGFR_HUMAN	Homo sapiens	EGFR	Epidermal growth factor receptor
+2itx	A	P00533	EGFR_HUMAN	Homo sapiens	EGFR	Epidermal growth factor receptor
+2itw	A	P00533	EGFR_HUMAN	Homo sapiens	EGFR	Epidermal growth factor receptor
+3rcd	A	P04626	ERBB2_HUMAN	Homo sapiens	ERBB2	Receptor tyrosine-protein kinase erbB-2
+3rcd	B	P04626	ERBB2_HUMAN	Homo sapiens	ERBB2	Receptor tyrosine-protein kinase erbB-2
+3rcd	C	P04626	ERBB2_HUMAN	Homo sapiens	ERBB2	Receptor tyrosine-protein kinase erbB-2
+3rcd	D	P04626	ERBB2_HUMAN	Homo sapiens	ERBB2	Receptor tyrosine-protein kinase erbB-2
+3pp0	A	P04626	ERBB2_HUMAN	Homo sapiens	ERBB2	Receptor tyrosine-protein kinase erbB-2
+3pp0	B	P04626	ERBB2_HUMAN	Homo sapiens	ERBB2	Receptor tyrosine-protein kinase erbB-2
+4riw	A	P21860	ERBB3_HUMAN	Homo sapiens	ERBB3	Receptor tyrosine-protein kinase erbB-3
+4riw	B	P00533	EGFR_HUMAN	Homo sapiens	EGFR	Epidermal growth factor receptor
+4riw	C	P21860	ERBB3_HUMAN	Homo sapiens	ERBB3	Receptor tyrosine-protein kinase erbB-3
+4riw	D	P00533	EGFR_HUMAN	Homo sapiens	EGFR	Epidermal growth factor receptor
+3bbt	B	Q15303	ERBB4_HUMAN	Homo sapiens	ERBB4	Receptor tyrosine-protein kinase erbB-4
+3bbt	D	Q15303	ERBB4_HUMAN	Homo sapiens	ERBB4	Receptor tyrosine-protein kinase erbB-4
+2r4b	A	Q15303	ERBB4_HUMAN	Homo sapiens	ERBB4	Receptor tyrosine-protein kinase erbB-4
+2r4b	B	Q15303	ERBB4_HUMAN	Homo sapiens	ERBB4	Receptor tyrosine-protein kinase erbB-4

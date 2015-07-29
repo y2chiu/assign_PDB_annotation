@@ -15,7 +15,7 @@
     $DIR_DATA    = sprintf('%s/0_download/', dirname($DIR_PROG));
     $FN_UAC_ANNO = sprintf('%s/uniprot_sprot.anno', $DIR_DATA);
     $FN_UNIPROT  = sprintf('%s/pdb_chain_uniprot.lst', $DIR_DATA);
-    $FN_TAXONOMY = sprintf('%s/pdb_chain_taxonomy.lst', $DIR_DATA);
+    //$FN_TAXONOMY = sprintf('%s/pdb_chain_taxonomy.lst', $DIR_DATA);
    
     $map_uniprot  = array();
     $map_taxonomy = array();
@@ -57,6 +57,8 @@
                 $map_uac_anno[$ac] = array_combine($key, array($ac,$id,$os,$gn,$de));
             }
         }
+
+        //print_r($map_uac_anno);
     }
 
 
@@ -76,39 +78,47 @@
             if(empty($line) || $line[0] == '#')
                 continue;
 
-            $pid  = preg_split('/\s+/',$line);
-            $pid  = array_shift($pid);
+            $id  = preg_split('/\s+/',$line);
+            $id  = array_shift($id);
 
-            if(preg_match("/[0-9]\w{3}_\w/",$pid) != 1)
+            if(preg_match("/[0-9]\w{3}/",$id) != 1)
             {
-                fprintf(STDERR, " # Error, input LIST format error (%s)\n", $pid);
+                fprintf(STDERR, " # Error, input LIST format error (%s)\n", $id);
                 exit;
             }
 
             $o = array();
-            if(isset($map_uniprot[$pid]))
+            if(isset($map_uniprot[$id]))
             {
-                $ac = $map_uniprot[$pid];
-                $ac = explode(',',$ac);
+                $pids = array_keys($map_uniprot[$id]);
 
-                foreach($ac as $i=>$k)
+                foreach($pids as $pid)
                 {
-                    $ano = array('-','-','-','-','-');
+                    list($pdb, $pch) = explode('_', $pid);
+                    $ac = explode(',',$map_uniprot[$id][$pid]);
 
-                    if(isset($map_uac_anno[$k]))
-                        $ano = array_values($map_uac_anno[$k]);
+                    foreach($ac as $i=>$k)
+                    {
+                        $ano = array('-','-','-','-','-');
+   
+                        if(isset($map_uac_anno[$k]))
+                        {
+                            foreach(array_values($map_uac_anno[$k]) as $j => $v)
+                                if(!empty($v)) $ano[$j] = $v;
+                        }
 
-                    $ano[0] = $k;
-                    $o = array_merge(array($pid), $ano);
+                        $ano[0] = $k;
+                        $o = array_merge(array($pdb, $pch), $ano);
 
-                    echo ($i==0) ? '' : '@';
-                    echo join("\t", $o)."\n";
+                        echo ($i==0) ? '' : '@';
+                        echo join("\t", $o)."\n";
+                    }
                 }
             }
             else
             {
-                $ano = array('-','-','-','-','-');
-                $o = array_merge(array($pid), $ano);
+                $ano = array('_','-','-','-','-','-');
+                $o = array_merge(array($id), $ano);
 
                 echo join("\t", $o)."\n";
             }
@@ -141,11 +151,15 @@
             $d = explode("\t",$line);
             list($pdb, $pch, $uac) = $d;
             $pid = sprintf('%s_%s', $pdb, $pch);
+            $key = sprintf('%s', $pdb);
 
-            if(isset($map_uniprot[$pid]))
-                $map_uniprot[$pid] = sprintf('%s,%s',$map_uniprot[$pid],$uac);
+            if(!isset($map_uniprot[$key]))
+                $map_uniprot[$key] = array();
+
+            if(isset($map_uniprot[$key][$pid]))
+                $map_uniprot[$key][$pid] = sprintf('%s,%s',$map_uniprot[$key][$pid],$uac);
             else
-                $map_uniprot[$pid] = $uac;
+                $map_uniprot[$key][$pid] = $uac;
 
             $map_uac_anno[$uac] = array();
         }
