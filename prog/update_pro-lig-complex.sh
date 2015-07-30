@@ -51,8 +51,5 @@ else
     mv $f_cpx $f_pat.${n_cpx}complex.txt
 
 
-    # Save an empty file with update-date info as its name
-    find ${D_WORK} -type f -name 'VERSION_*' -delete
-    touch ${D_WORK}/VERSION_`date +%Y%m%d`
 fi
 
